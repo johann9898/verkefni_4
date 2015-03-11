@@ -1,0 +1,145 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300,700);
+
+
+body {
+                margin: 3.5em auto 0 auto;
+               
+                font-size: .9em;
+                line-height: 1,2em;
+ }
+h4,h5,h6{
+                margin: 0;
+                font-family: 'Roboto Slab', serif;
+                font-weight: 700;
+                padding: 0.1em;
+                
+}
+h1,h2,h3{
+
+                margin: 0;
+                padding: 1em;
+                font-family: 'Roboto Slab', serif;
+                font-weight: 300;
+                color: #765C00;
+}
+p
+{
+     margin: 0;
+    padding: 1em;
+}
+h1
+{
+    font-size: 1.8em;
+    padding: 0.4;
+}
+table
+{
+    width: 100%;
+}
+img{
+    max-width: 100%;
+    height: auto;
+
+}
+.floatR
+{
+    float: right;
+}
+figure
+{
+    padding: 0 1em;
+}
+figcaption {
+    font-family: italic;
+    font-size: .9em;
+}
+.over200
+{
+    max-height: 12,5em;
+}
+            
+.pure-g div,
+.pure-g article,
+.pure-g aside,
+.pure-menu-selected{  
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+     box-sizing: border-box;
+    border: 1px solid rgb(255,195,13);
+}
+.button-warning {
+     background: rgb(223, 117, 20); /* this is an orange */
+}
+            /*  
+                ATHUGIÐ! pure-u~ klasar eru hannaðir sem ílát fyrir annað efni. 
+                EKKI setja útlitsstíla á þá (t.d. border, því þá riðlast uppbyggingin). 
+                Einfaldast er að setja útlitsstílana á hreiðruð tög eins og sýnt er hér
+
+            */
+.tabs {
+      position: relative;   
+      min-height: 600px; /* This part sucks */
+      clear: both;
+      margin: 25px 0;
+    }
+    .tab {
+      float: left;
+    }
+    .tab label {
+      background: #eee; 
+      padding: 10px; 
+      border: 1px solid #ccc; 
+      margin-left: -1px; 
+      position: relative;
+      left: 1px; 
+    }
+    .tab [type=radio] {
+      display: none;   
+    }
+    .content {
+      position: absolute;
+      top: 28px;
+      left: 0;
+      background: white;
+      right: 0;
+      bottom: 0;
+      padding: 20px;
+      border: 1px solid #ccc; 
+      
+      overflow: hidden;
+    }
+    .content > * {
+      opacity: 0;
+      
+      -webkit-transform: translate3d(0, 0, 0);
+    
+      -webkit-transform: translateX(-100%);
+      -moz-transform:    translateX(-100%);
+      -ms-transform:     translateX(-100%);
+      -o-transform:      translateX(-100%);
+      
+      -webkit-transition: all 0.6s ease;
+      -moz-transition:    all 0.6s ease;
+      -ms-transition:     all 0.6s ease;
+      -o-transition:      all 0.6s ease;
+    }
+    [type=radio]:checked ~ label {
+      background: white;
+      border-bottom: 1px solid white;
+      z-index: 2;
+    }
+    [type=radio]:checked ~ label ~ .content {
+      z-index: 1;
+    }
+    [type=radio]:checked ~ label ~ .content > * {
+      opacity: 1;
+      
+      -webkit-transform: translateX(0);
+      -moz-transform:    translateX(0);
+      -ms-transform:     translateX(0);
+      -o-transform:      translateX(0);
+    }
+
+
+
+
